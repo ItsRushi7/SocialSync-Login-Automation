@@ -71,9 +71,9 @@ def Facebook_login(Username, Password):
     Driver.get('https://www.facebook.com/login/')
 
     Facebook_Username = Driver.find_element(By.NAME, 'email')
-    Facebook_Username.send_keys("7744931963")
+    Facebook_Username.send_keys(Username)
     Facebook_password = Driver.find_element(By.NAME, 'pass')
-    Facebook_password.send_keys("Vishu@161298")
+    Facebook_password.send_keys(Password)
     sleep(4)
     
     button = Driver.find_element(By.NAME, value="login")
